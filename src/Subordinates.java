@@ -23,4 +23,9 @@ public class Subordinates {
         for (int i = 1; i <= n; i++) {
             tree[i] = new ArrayList<>();
         }
+        for (int i = 2; i <= n; i++) {
+            int boss = sc.nextInt();
+            tree[boss].add(i);
+        }
     }
+}
