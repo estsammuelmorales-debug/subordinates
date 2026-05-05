@@ -12,4 +12,15 @@ public class Subordinates {
             subordinates[node] += subordinates[child] + 1;
         }
     }
-}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        tree = new ArrayList[n + 1];
+        subordinates = new int[n + 1];
+
+        for (int i = 1; i <= n; i++) {
+            tree[i] = new ArrayList<>();
+        }
+    }
