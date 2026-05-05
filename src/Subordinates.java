@@ -27,5 +27,10 @@ public class Subordinates {
             int boss = sc.nextInt();
             tree[boss].add(i);
         }
+        dfs(1);
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(subordinates[i] + " ");
+        }
     }
 }
